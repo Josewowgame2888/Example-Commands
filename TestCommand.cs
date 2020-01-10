@@ -5,7 +5,7 @@ namespace Command
 	    
 		static void Main(string[] args)
 		{
-		   	Console.WriteLine("Command: ");
+		Console.WriteLine("Command: ");
 	        string world = Console.ReadLine();
 	        string[] command = world.Split(" ");
 		    switch(command[0])
@@ -24,11 +24,11 @@ namespace Command
 		            }
 		            Console.WriteLine(telling);
 		        } else {
-		            Console.WriteLine("No has escrito un mensaje");
+		            Console.WriteLine("A message was not received!");
 		        }
 		        break;
 		        default:
-		            Console.WriteLine("Comando no encontrado!");
+		            Console.WriteLine("Command does not exist!");
 		        break;
 		    }
 		}
